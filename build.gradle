@@ -9,12 +9,12 @@ buildscript {
         maven { url 'http://repo.jenkins-ci.org/public/' }
     }
     dependencies {
-        classpath 'org.jenkins-ci.tools:gradle-jpi-plugin:0.40.0'
+        classpath 'org.jenkins-ci.tools:gradle-jpi-plugin:0.38.0'
     }
 }
 
 plugins {
-    id 'org.jenkins-ci.jpi' version '0.40.0'
+    id 'org.jenkins-ci.jpi' version '0.38.0'
 }
 
 apply plugin: 'org.jenkins-ci.jpi'
@@ -28,7 +28,7 @@ targetCompatibility = '1.8'
 sourceCompatibility = '1.8'
 
 jenkinsPlugin {
-    jenkinsVersion = '2.249.2'                  // Version of Jenkins core this plugin depends on.
+    //jenkinsVersion = '2.249.2'                  // Version of Jenkins core this plugin depends on.
     displayName = 'Morpheus'                // Human-readable name of plugin.
     url = 'https://github.com/gomorpheus/morpheus-jenkins/wiki'   // URL for plugin on Jenkins wiki or elsewhere.
     gitHubUrl = 'https://github.com/gomorpheus/morpheus-jenkins'              // Plugin URL on GitHub. Optional.
